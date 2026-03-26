@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <title>Página de inicio</title>
+</head>
+<body>
+
+    <header>
+        <h1>Bienvenido</h1>
+        <nav>
+            <a href="index.html">Inicio</a> |
+            <a href="intereses.html">Intereses</a> |
+            <a href="contacto.html">Contacto</a>
+        </nav>
+        <hr>
+    </header>
+
+    <main>
+        <h2>Inicio</h2>
+        <p>
+            Esta es la página de inicio. Desde aquí puedes acceder a mis intereses
+            y a la página de contacto.
+        </p>
+
+        <p>
+            <a href="intereses.html">Ver intereses</a>
+        </p>
+        <p>
+            <a href="contacto.html">Ir a contacto</a>
+        </p>
+
+        <img src="Manu.png" alt="Mi infografía" style="width:100%;max-width:400px;height:auto;display:block;margin:0 auto;">
+
+    </main>
+
+    <hr>
+
+    <footer>
+        <p>© <span id="year"></span></p>
+    </footer>
+
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+
+</body>
+</html>

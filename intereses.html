@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <title>Página de contacto</title>
+</head>
+<body>
+
+    <header>
+        <h1>Bienvenido</h1>
+        <nav>
+            <a href="index.html">Inicio</a> |
+            <a href="intereses.html">Intereses</a> |
+            <a href="contacto.html">Contacto</a>
+        </nav>
+        <hr>
+    </header>
+
+    <main>
+        <h2>Intereses</h2>
+        <p>
+            Tengo interés en recibirme.
+        </p>
+
+        <p>
+            <a href="contacto.html">Ver contacto</a>
+        </p>
+        <p>
+            <a href="index.html">Volver a inicio</a>
+        </p>
+    </main>
+
+    <hr>
+
+    <footer>
+        <p>© <span id="year"></span></p>
+    </footer>
+
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+
+</body>
+</html>

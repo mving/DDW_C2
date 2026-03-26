@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <title>Página de contacto</title>
+</head>
+<body>
+
+    <header>
+        <h1>Bienvenido</h1>
+        <nav>
+            <a href="index.html">Inicio</a> |
+            <a href="intereses.html">Intereses</a> |
+            <a href="contacto.html">Contacto</a>
+        </nav>
+        <hr>
+    </header>
+
+    <main>
+        <h2>Contactame</h2>
+        <p>
+            Mi correo electrónico es: <a href="mailto:manvidal@uade.edu.ar">manvidal@uade.edu.ar</a>
+        </p>
+
+        <p>
+            <a href="intereses.html">Ver intereses</a>
+        </p>
+        <p>
+            <a href="index.html">Volver a inicio</a>
+        </p>
+    </main>
+
+    <hr>
+
+    <footer>
+        <p>© <span id="year"></span></p>
+    </footer>
+
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+
+</body>
+</html>
