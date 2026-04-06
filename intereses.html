@@ -2,43 +2,35 @@
 <html lang="es">
 <head>
     <meta charset="utf-8">
-    <title>Página de contacto</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Página de intereses</title>
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
 
-    <header>
-        <h1>Bienvenido</h1>
-        <nav>
-            <a href="index.html">Inicio</a> |
-            <a href="intereses.html">Intereses</a> |
-            <a href="contacto.html">Contacto</a>
-        </nav>
-        <hr>
-    </header>
+    <!-- Header dinámico -->
+    <div id="header"></div>
 
-    <main>
-        <h2>Intereses</h2>
-        <p>
-            Tengo interés en recibirme.
-        </p>
+    <main class="site-main">
+        <section class="card">
+            <h2>Intereses</h2>
 
-        <p>
-            <a href="contacto.html">Ver contacto</a>
-        </p>
-        <p>
-            <a href="index.html">Volver a inicio</a>
-        </p>
+            <p>
+                Tengo interés en recibirme.
+            </p>
+
+            <div class="links">
+                <a class="btn" href="contacto.html">Ver contacto</a>
+                <a class="btn secondary" href="index.html">Volver a inicio</a>
+            </div>
+        </section>
     </main>
 
-    <hr>
+    <!-- Footer dinámico -->
+    <div id="footer"></div>
 
-    <footer>
-        <p>© <span id="year"></span></p>
-    </footer>
-
-    <script>
-        document.getElementById('year').textContent = new Date().getFullYear();
-    </script>
+    <!-- Script principal -->
+    <script src="js/main.js"></script>
 
 </body>
 </html>

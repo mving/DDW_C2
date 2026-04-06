@@ -2,47 +2,38 @@
 <html lang="es">
 <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Página de inicio</title>
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
 
-    <header>
-        <h1>Bienvenido</h1>
-        <nav>
-            <a href="index.html">Inicio</a> |
-            <a href="intereses.html">Intereses</a> |
-            <a href="contacto.html">Contacto</a>
-        </nav>
-        <hr>
-    </header>
+    <!-- Header dinámico -->
+    <div id="header"></div>
 
-    <main>
-        <h2>Inicio</h2>
-        <p>
-            Esta es la página de inicio. Desde aquí puedes acceder a mis intereses
-            y a la página de contacto.
-        </p>
+    <main class="site-main">
+        <section class="card">
+            <h2>Inicio</h2>
 
-        <p>
-            <a href="intereses.html">Ver intereses</a>
-        </p>
-        <p>
-            <a href="contacto.html">Ir a contacto</a>
-        </p>
+            <p>
+                Esta es la página de inicio. Desde aquí puedes acceder a mis intereses
+                y a la página de contacto.
+            </p>
 
-        <img src="Manu.png" alt="Mi infografía" style="width:100%;max-width:400px;height:auto;display:block;margin:0 auto;">
+            <div class="links">
+                <a class="btn" href="intereses.html">Ver intereses</a>
+                <a class="btn secondary" href="contacto.html">Ir a contacto</a>
+            </div>
 
+            <img src="img/Manu.png" alt="Mi infografía" class="main-image">
+        </section>
     </main>
 
-    <hr>
+    <!-- Footer dinámico -->
+    <div id="footer"></div>
 
-    <footer>
-        <p>© <span id="year"></span></p>
-    </footer>
-
-    <script>
-        document.getElementById('year').textContent = new Date().getFullYear();
-    </script>
+    <!-- Script único -->
+    <script src="js/main.js"></script>
 
 </body>
 </html>
