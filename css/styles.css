@@ -229,7 +229,7 @@ body {
 }
 
 /* Responsive */
-@media (max-width: 700px) {
+@media (width <= 700px) {
     .card {
         padding: 25px 18px;
     }
