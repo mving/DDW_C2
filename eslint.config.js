@@ -17,5 +17,6 @@ module.exports = [
       "no-unused-vars": "warn",
       "no-console": "off"
     }
-  }
+  },
+  require("eslint-config-prettier")
 ];
