@@ -166,7 +166,10 @@ body {
 /* Responsive */
 @media (width <= 768px) {
   .site-header { padding: 20px 10px; }
+
   .links { flex-direction: column; }
+  
   .btn { text-align: center; }
+  
   .main-nav { scale: 0.9; }
 }
